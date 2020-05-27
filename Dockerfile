@@ -6,4 +6,5 @@ RUN wget https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.22-1.el7.x86_64.rpm-
  rpm -ivh mysql-community-common-5.7.22-1.el7.x86_64.rpm &&\
  rpm -ivh mysql-community-libs-5.7.22-1.el7.x86_64.rpm &&\
  rpm -ivh mysql-community-client-5.7.22-1.el7.x86_64.rpm &&\
- rm -rf *.rpm
+ rm -rf *.rpm &&\
+ rm -rf *.tar
