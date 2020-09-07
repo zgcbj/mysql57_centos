@@ -13,8 +13,8 @@ RUN git clone https://github.com/pingcap/benchmarksql.git &&\
  git checkout 5.0-mysql-support-opt-2.1 &&\
  ant 
 RUN cd ~ &&\
-  git clone https://github.com/akopytov/sysbench.git &&\
- cd sysbench &&\
+ git clone https://github.com/akopytov/sysbench.git 
+RUN cd ~/sysbench &&\
  git checkout 1.0.14 &&\
  ./autogen.sh &&\
  ./configure &&\
