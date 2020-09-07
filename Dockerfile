@@ -21,5 +21,5 @@ RUN cd ~/sysbench &&\
  make -j &&\
  make install 
 RUN cd ~ &&\
- wget https://download.pingcap.org/tidb-v4.0.3-linux-amd64.tar.gz &&\
- tar zxvf tidb-v4.0.3-linux-amd64.tar.gz 
+ wget https://download.pingcap.org/tidb-v4.0.3-linux-amd64.tar.gz 
+RUN tar zxvf tidb-v4.0.3-linux-amd64.tar.gz 
