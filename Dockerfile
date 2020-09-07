@@ -8,7 +8,7 @@ RUN wget https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.22-1.el7.x86_64.rpm-
  rpm -ivh mysql-community-client-5.7.22-1.el7.x86_64.rpm &&\
  rm -rf *.rpm &&\
  rm -rf *.tar 
-RUN yum install -y java ant &&\
+RUN yum install -y java ant 
 RUN git clone https://github.com/pingcap/benchmarksql.git &&\
  cd benchmarksql &&\
  git checkout 5.0-mysql-support-opt-2.1 &&\
