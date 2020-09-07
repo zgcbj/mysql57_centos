@@ -1,6 +1,6 @@
 FROM centos
 
-RUN yum -y install  wget git  make automake libtool pkgconfig libaio-devel  mariadb-devel java ant  ncurses-compat-libs jq &&\
+RUN yum -y install  wget git  make automake libtool pkgconfig libaio-devel  mariadb-devel java ant  ncurses-compat-libs jq 
 RUN wget https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.22-1.el7.x86_64.rpm-bundle.tar  &&\
  tar xvf mysql-5.7.22-1.el7.x86_64.rpm-bundle.tar &&\
  rpm -ivh mysql-community-common-5.7.22-1.el7.x86_64.rpm &&\
