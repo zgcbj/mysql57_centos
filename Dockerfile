@@ -24,4 +24,6 @@ RUN cd ~ &&\
  wget https://download.pingcap.org/tidb-v4.0.8-linux-amd64.tar.gz && cd ~ && tar zxvf tidb-v4.0.8-linux-amd64.tar.gz  && rm -rf tidb-v4.0.8-linux-amd64.tar.gz
 RUN cd ~ &&\
  wget https://download.pingcap.org/tidb-toolkit-v4.0.8-linux-amd64.tar.gz && cd ~ && tar zxvf tidb-toolkit-v4.0.8-linux-amd64.tar.gz && rm -rf tidb-toolkit-v4.0.8-linux-amd64.tar.gz
+RUN yum -y install libaio-devel
+RUN yum -y install fio
 CMD ["/bin/ping", "127.0.0.1"]
